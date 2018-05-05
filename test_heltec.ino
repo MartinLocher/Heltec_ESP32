@@ -1,28 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2015 Thomas Telkamp and Matthijs Kooijman
- *
- * Permission is hereby granted, free of charge, to anyone
- * obtaining a copy of this document and accompanying files,
- * to do whatever they want with them without any restriction,
- * including, but not limited to, copying, modification and redistribution.
- * NO WARRANTY OF ANY KIND IS PROVIDED.
- *
- * This example sends a valid LoRaWAN packet with payload "Hello, world!", that
- * will be processed by The Things Network server.
- *
- * Note: LoRaWAN per sub-band duty-cycle limitation is enforced (1% in g1, 
-*  0.1% in g2). 
- *
- * Change DEVADDR to a unique address! 
- * See http://thethingsnetwork.org/wiki/AddressSpace
- *
- * Do not forget to define the radio type correctly in config.h, default is:
- *   #define CFG_sx1272_radio 1
- * for SX1272 and RFM92, but change to:
- *   #define CFG_sx1276_radio 1
- * for SX1276 and RFM95.
- *
- *******************************************************************************/
 
 #include <lmic.h>
 #include <hal/hal.h>
